@@ -1,36 +1,22 @@
-# demo
+# Isomorphic ClojureScript with Reagent and Node.js
 
-FIXME: description
+This is an example application that demonstrates how to build an isomorphic ClojureScript application using Reagent (react.js) that targets Node.js
+
+See http://blog.testdouble.com/posts/2016-01-21-isomorphic-clojurescript.html for more in-depth information.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+This demo assumes you have Java, Leiningen and Node.js installed.
 
 ## Usage
 
-FIXME: explanation
+`npm install` to install Node packages.
 
-    $ java -jar demo-0.1.0-standalone.jar [args]
+`lein cljsbuild once server app` to build project
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+`node resources/public/js/server-side/server.js` to start server
 
 ## License
-
-Copyright © 2016 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
