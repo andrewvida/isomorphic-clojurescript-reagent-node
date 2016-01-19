@@ -1,0 +1,18 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": "true",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "source-map-support": "0.4.0",
+    "ws": "0.8.1"
+  }
+}
