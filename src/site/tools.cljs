@@ -1,5 +1,5 @@
 (ns site.tools
-  (:require [reagent.core :as reagent :refer [atom]]
+  (:require [reagent.core :as reagent]
             [secretary.core :as secretary :refer-macros [defroute]]
             [demo.core :as core]))
 
@@ -23,4 +23,4 @@
 (defn ^:export render-page [path]
   (reagent/render-to-static-markup (do
                                      (secretary/dispatch! path)
-                                     (template {:body core/app-view}))))
+                                     [template {:body core/app-view}])))

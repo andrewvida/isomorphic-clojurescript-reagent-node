@@ -1,9 +1,6 @@
 (ns demo.core
   (:require [reagent.core :as reagent :refer [atom]]
-            [secretary.core :as secretary :refer-macros [defroute]]
-            [goog.events :as events]
-            [goog.history.EventType :as EventType])
-  (:import goog.History))
+            [secretary.core :as secretary :refer-macros [defroute]]))
 
 (def current-page (atom nil))
 

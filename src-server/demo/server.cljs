@@ -1,6 +1,5 @@
 (ns demo.server
   (:require [cljs.nodejs :as nodejs]
-            [demo.core :as core]
             [site.tools :as tools]))
 
 (nodejs/enable-util-print!)
