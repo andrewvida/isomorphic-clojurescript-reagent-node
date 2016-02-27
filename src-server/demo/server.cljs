@@ -12,7 +12,7 @@
 
 (defn -main []
   (let [app (express)]
-    (.get app "/" handle-request)
+    (.get app "*" handle-request)
     (.use app (serve-static "resources/public/js"))
     (.listen app 3000 (fn []
                         (println "Server started on port 3000")))))
